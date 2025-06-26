@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLASHCARD</title>
+    <link
+     rel="stylesheet" 
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="steelsheet" href="style.css" />
+</head>
+<body>
+   <div class="container">
+    <div class="add-flashcard">
+        <button id="add-flashcard">Add Flashcard</button>
+    </div>
+    <div class="card-con">
+        <div class="card-list-container"></div>
+    </div>
+   </div>
+   <div class="question-container hide" id="add-question-card">
+     <h2>Add Flashcard</h2>
+     <div class="wrapper">
+        <div class="error-con">
+            <span class="hide" id="error">Input fields cannot be empty</span>
+        </div>
+        <i class="fa-solid fa-xmark" id="close-btn"></i>
+     </div>
+     <label for="question">Question</label>
+     <textarea 
+      id="question"
+      class="input" 
+      rows="2"  
+      placeholder="type the question here..."
+      ></textarea>
+     <label for="answer">Ansxer:</label>
+     <textarea 
+       id="answer"
+       class="input"
+       rows="2"
+       placeholder="types the answer here..."
+     ></textarea>
+     <button id="save-btn">save</button>
+   </div>
+   <script src="script.js"></script> 
+</body>
+</html>
