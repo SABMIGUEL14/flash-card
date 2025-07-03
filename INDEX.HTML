@@ -10,38 +10,41 @@
      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
 </head>
 <body>
-   <div class="container">
+  <div class="container">
+    <header class="header">
+      <h1><i class="fa-solid fa-clone"></i> Application de Fiches</h1>
+    </header>
     <div class="add-flashcard">
-        <button id="add-flashcard">Ajouter une fiche</button>
+      <button id="add-flashcard"><i class="fa-solid fa-plus"></i> Ajouter une fiche</button>
     </div>
     <div class="card-con">
-        <div class="card-list-container"></div>
+      <div class="card-list-container"></div>
     </div>
-   </div>
-   <div class="question-container hide" id="add-question-card">
-     <h2>Ajouter une fiche</h2>
-     <div class="wrapper">
-        <div class="error-con">
-            <span class="hide" id="error">Les champs ne peuvent pas être vides</span>
-        </div>
-        <i class="fa-solid fa-xmark" id="close-btn"></i>
-     </div>
-     <label for="question">Question :</label>
-     <textarea 
+  </div>
+  <div class="question-container hide" id="add-question-card">
+    <h2>Ajouter une fiche</h2>
+    <div class="wrapper">
+      <div class="error-con">
+        <span class="hide" id="error">Les champs ne peuvent pas être vides</span>
+      </div>
+      <i class="fa-solid fa-xmark" id="close-btn"></i>
+    </div>
+    <label for="question">Question :</label>
+    <textarea 
       id="question"
       class="textarea" 
       rows="2"  
       placeholder="Écris la question ici..."
-      ></textarea>
-     <label for="answer">Réponse :</label>
-     <textarea 
-       id="answer"
-       class="textarea"
-       rows="2"
-       placeholder="Écris la réponse ici..."
-     ></textarea>
-     <button id="save-btn">Enregistrer</button>
-   </div>
-   <script src="script.js"></script> 
+    ></textarea>
+    <label for="answer">Réponse :</label>
+    <textarea 
+      id="answer"
+      class="textarea"
+      rows="2"
+      placeholder="Écris la réponse ici..."
+    ></textarea>
+    <button id="save-btn"><i class="fa-solid fa-check"></i> Enregistrer</button>
+  </div>
+  <script src="script.js"></script> 
 </body>
 </html>
